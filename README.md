@@ -40,3 +40,15 @@ Simon Game/
 ├── styles.css
 ├── game.js
 └── README.md
+
+## Live deployment (Vercel)
+
+This is a static frontend game: no backend, database, or environment variables are needed.
+
+1. Import `Aryannnn11/Simon-game` into a new Vercel project.
+2. Choose **Framework Preset: Other**.
+3. Leave **Root Directory** at the repository root (`./`).
+4. Disable the build command (no build needed). The output is the repository root containing `index.html`.
+5. Click **Deploy** and open the generated `.vercel.app` URL.
+
+The game can be started with **Start Game** (including on touch devices) or a key on desktop. Each level replays the entire color sequence; a high score records the highest **completed** level in browser localStorage. Sound is synthesized by the Web Audio API. No personal data is sent to a server.
